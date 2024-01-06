@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Space Grotesk", sans-serif;
+    }
+}
+
+.bg-clip-padding-border {
+    background-image: linear-gradient(white, white),
+        linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    /* background-image: linear-gradient(white, white),
+        linear-gradient(to right, orange, yellow);
+    background-origin: border-box; */
+    background-clip: padding-box, border-box;
+}
