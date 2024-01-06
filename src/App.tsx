@@ -203,7 +203,7 @@ function App() {
 
         {/* Right side ends here */}
       </div>
-      <DevTool control={control} />
+      {/* <DevTool control={control} /> */}
     </main>
   );
 }
