@@ -1,7 +1,6 @@
 import LeftSide from "./components/LeftSide";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { DevTool } from "@hookform/devtools";
 import { ErrorMessage, Input, Label } from "./components/Input";
 import { AnimatePresence } from "framer-motion";
 import { FormType, formSchema } from "./formSchema";
@@ -10,7 +9,7 @@ import iconComplete from "./assets/icon-complete.svg";
 import { handleCardNUmberSpacing } from "./utils";
 
 function App() {
-  const { register, control, watch, setValue, formState, handleSubmit, reset } =
+  const { register, watch, setValue, formState, handleSubmit, reset } =
     useForm<FormType>({ resolver: zodResolver(formSchema) });
   const { errors, isSubmitSuccessful } = formState;
 
@@ -203,7 +202,6 @@ function App() {
 
         {/* Right side ends here */}
       </div>
-      {/* <DevTool control={control} /> */}
     </main>
   );
 }
