@@ -202,7 +202,6 @@ function App() {
 
         {/* Right side ends here */}
       </div>
-      <code>{JSON.stringify(import.meta.env)}</code>
     </main>
   );
 }
